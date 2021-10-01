@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/icon fonts/themify-icons copy/themify-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/CSS/grid.css">
+    <link rel="stylesheet" href="./assets/CSS/base.css">
+    <link rel="stylesheet" href="./assets/CSS/main.css">
+    <link rel="stylesheet" href="./assets/CSS/responsive.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.1/respond.min.js"></script>       
+    <![endif]-->
+    <title>
+        The Coffee House Delivery </title>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="grid wide">
+        <div class=" header__container">
+        <div class="logo hide-on-mb-tablet ">
+            <img src="https://www.thecoffeehouse.com/_nuxt/img/logo.174bdfd.svg" alt="" class="logo__img">
+        </div>
+
+        <div class="delivery">
+            <img src="./assets/img/header_delivery.png" alt=""  class="delivery__img">
+            <img src="./assets/img/header_pickup.png" alt="" class="delivery__img active">
+            <div class="delivery__text">
+                <div class="delivery__heading">Giao hàng</div>
+                <div class="delivery__heading active">Mang đi</div>
+                <div class="delivery__content">Tại : Nhập địa chỉ giao hàng </div>
+            </div>
+            <i class="delivery__icon ti-angle-down"></i>
+        </div>
+
+        <div class="nav hide-on-mb-tablet">
+            <ul class="nav__category">
+                <li class="nav__item  ">
+                    <a href="" class="nav__item-link "> Đặt hàng</a> 
+                </li>
+                <li class="nav__item">
+                    <a href="#news" class="nav__item-link">Tin tức</a> 
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__item-link">Khuyến mãi</a> 
+                </li>
+                <li class="nav__item">
+                    <a href="#store" class="nav__item-link">Cửa hàng</a> 
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__item-link">Tuyển dụng</a>
+                 </li>
+            </ul>
+        </div>
+
+        <div class="user">
+            <span class="user__img-wrap">
+                <img src="./assets/img/header1.png" alt="" class="user__img">
+                <div class="user__option">
+                    <i class="user__icon-close ti-close"></i>
+                    <a class="user__option-item user__option-search" href="">
+                        <img src="./assets/img/header__seach.svg" alt="" class="user__search-img">
+                        Tra cứu đơn hàng
+                    </a>
+                    <div class="user__option-item user__option-login">
+                        <img src="./assets/img/header_login.svg" alt="" class="user__search-img">
+                        Đăng nhập
+                    </div>
+                </div>
+            </span>
+
+            <img src="./assets/img/header2.png" alt="" class="user__img ">
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="slider-container">
+    <div class="grid wide">
+        <div class="slides">     
+            <!-- slide img -->
+            <a href="#" class="slide slide-1 active">
+                <img src="./assets/img/slider3.jpeg" alt="" class=" slide__img">
+            </a>
+            <a href="#" class="slide slide-2 ">
+                <img src="./assets/img/slider1.png" alt="" class=" slide__img">
+            </a>
+            <a href="#" class="slide slide-3">
+                <img src="./assets/img/slider2.jpeg" alt="" class=" slide__img">
+            </a>
+            <!-- manual navigation -->
+            <div class="nav-manual">
+                <div class="manual-btn active " id="1"></div>
+                <div class="manual-btn" id="2"></div>
+                <div class="manual-btn" id="3"></div>
+            </div>
+    
+    </div>
+</div>
+
+<div class="main ">
+    <div class="suggestion ">
+        <div class="grid wide">
+            <div class="suggestion__wrap">
+                <div class="suggestion__heading-wrap">
+                    <i class="suggestion__icon fas fa-lightbulb"></i>
+                    <div class="suggestion__heading active">
+                        Nhà gợi ý cho bạn
+                    </div>
+                    <div class="suggestion__heading">
+                        Đặt gần đây
+                    </div>
+
+                </div>
+                <div class="suggestion__option row active">
+                    <!-- render from database -->
+                </div>
+
+                <div class="suggestion__option current__order ">
+                    <div class="current__order-text">
+                        Vui lòng đăng nhập để xem đơn hàng gần đây của bạn
+                    </div>
+                    <div class="login__button">
+                        <i class="login__icon far fa-user"></i>
+                        ĐĂNG NHẬP
+                    </div>
+                 </div>
+            </div>
+
+        </div>   
+    </div>
+    <div id="product" class="main-product">
+        <div class="grid wide">
+            <div class="main__heading">
+                <i class="main__icon fas fa-trophy"></i>
+                Sản phẩm từ Nhà
+            </div>
+            <div class="main-product__category">
+                <div id="coffeebag" class="main-product__item active">
+                    <div class="main-product__item-img__wrap">
+                        <img src="./assets/img/main-product-coffeebag.png" alt="" class="main-product__item-img">
+                    </div>
+                    <div class="main-product__item-name">Cà Phê Gói - Uống Liền</div>
+                </div>
+                <div id="coffee" class="main-product__item ">
+                    <div class="main-product__item-img__wrap">
+                        <img src="./assets/img/main-product-coffee.png" alt="" class="main-product__item-img">
+                    </div>
+                    <div class="main-product__item-name">Cà Phê</div>
+                </div>
+                <div id="tea" class="main-product__item">
+                    <div class="main-product__item-img__wrap">
+                        <img src="./assets/img/main-product-tea.png" alt="" class="main-product__item-img">
+                    </div>
+                    <div class="main-product__item-name">Trà Trái Cây - Trà Sữa</div>
+                </div>
+                <div id="iceblended" class="main-product__item">
+                    <div class="main-product__item-img__wrap">
+                        <img src="./assets/img/main-product-iceblended.png" alt="" class="main-product__item-img">
+                    </div>
+                    <div class="main-product__item-name">Đá Xay - Choco - Matcha</div>
+                </div>
+                <div id="cake" class="main-product__item">
+                    <div class="main-product__item-img__wrap">
+                        <img src="./assets/img/main-product-cake.png" alt="" class="main-product__item-img">
+                    </div>
+                    <div class="main-product__item-name">Bánh - Snack</div>
+                </div>
+            </div>
+
+            <div class="main-product__list row">
+                <!-- render from database -->
+            </div>
+                    
+
+        </div>
+    </div>
+
+    <div id="news" class="news-container">
+        <div class="grid wide">
+            <div class="main__heading">
+                <i class="main__icon fas fa-newspaper"></i>                
+                Tin tức
+            </div>
+            <div class="news-list row">
+                <!-- render from database -->
+            </div>
+            <div class="news__read-more">
+                <a href="#" class="news__read-link">
+                    Xem tất cả 
+                </a>
+                <i class="news__read-more__icon ti-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="store" class="store">
+        <div class="store-slides">
+            <div class="slides-container">
+                <div class="store-slide active">
+                    <img src="./assets/img/store.png" alt="" class="store-slide__img">
+                </div>
+                <div class="store-slide">
+                    <img src="./assets/img/store2.jpeg" alt="" class="store-slide__img">
+                </div>
+                <div class="store-slide">
+                    <img src="./assets/img/store3.jpeg" alt="" class="store-slide__img">
+                </div>
+
+            </div>
+            <div class="store-slide__content">
+                <div class="store-slide__heading">Cửa hàng mới nhất ✨</div>
+                <div class="store-slide__body">
+                    <div class="store-slide__name">The Coffee House (Grand World Phú Quốc)</div> 
+                    <a href="#" class="store-slide__link">Xem thêm thông tin</a>
+                </div>
+                <div class="store-btns ">
+                    <div class="store-btn active"></div> 
+                    <div class="store-btn"></div> 
+                    <div class="store-btn"></div> 
+                </div>
+            </div>
+           
+        </div>
+        <div class="store-find">
+           <div class="store-find-container">
+               <div class="store-find__text">
+                   <div class="store-find__heading">
+                        <i class="fas fa-home store-find__icon"></i>
+                        Tìm Một Cửa Hàng
+                   </div>
+                   <div class="store-find__readmore">
+                       Xem toàn bộ cửa hàng 
+                       <i class="fas fa-arrow-right store-find__icon "></i>
+                   </div>
+               </div>
+               <div class="store-find__select">
+                   <select>
+                        <option value="">Vui lòng chọn một thành phố, quận, huyện</option>
+                        <option value="district-1">Quận 1</option>
+                        <option value="district-2">Quận 2</option>
+                        <option value="district-3">Quận 3</option>
+                   </select>
+                </div>
+                <div class="store-find__img-wrap hide-on-mb-tablet">
+                    <img src="https://www.thecoffeehouse.com/_nuxt/img/home-box-bg.d2f5825.svg" alt="" class="store-find__img">
+                </div>
+           </div>
+           
+        </div>
+        
+    </div>
+
+    <div class="apps">
+        <div class="grid wide">
+            <div class="apps__pattern hide-on-mb-tablet">
+                <img src="https://www.thecoffeehouse.com/_nuxt/img/cf-bg.2a2088b.svg" alt="" class="apps__pattern-img">
+            </div>
+
+            <div class="row apps_container">
+                <div class="apps__content col l-5 m-12 c-12">
+                    <div class="apps__head">
+                        <img src="https://www.thecoffeehouse.com/_nuxt/img/squarelogo.035676b.png" alt="" class="apps-head__img">
+                        <div class="apps__header">Đặt qua app THE COFFEE HOUSE để tích điểm và hưởng quyền lợi thành viên.</div>
+                    </div>
+                    <div class="apps__download">
+                        <img src="./assets/img/appstore.png" alt="" class="apps__download-item">
+                        <img src="./assets/img/googleplay.png" alt="" class="apps__download-item">
+                    </div>
+                </div>
+                <div class="apps__img-wrap col l-7 m-12 c-12">
+                    <img src="https://www.thecoffeehouse.com/_nuxt/img/newappv6.f2e1281.png" alt="" class="apps__img">
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>  
+
+</body>
+
+<footer>
+    <div class="info">
+        <div class="grid wide">
+            <div class="info-wrap row">
+                <div class="info__logo col l-2 m-3 c-4">
+                    <img src="https://www.thecoffeehouse.com/_nuxt/img/logo-footer.72c86fc.png" alt="">
+                </div>
+                <div class="info-category col l-10 m-9 c-8">
+                    <div class="row">
+                        <div class="col l-3 m-6 c-12">
+                            <div class="info-item__wrap">
+                                <div class="info__header">
+                                    <i class="info__header-icon fas fa-plus"></i>
+                                    Thông tin website
+                                </div>
+                                <ul class="info-list ">
+                                    <li class="info-item">Trang chủ</li>
+                                    <li class="info-item">Đặt hàng</li>
+                                    <li class="info-item">Tin tức</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="info-item__wrap">
+                                <div class="info__header">
+                                    <i class="info__header-icon fas fa-plus"></i>
+                                    Điều khoản sử dụng
+                                </div>
+                                <ul class="info-list">
+                                    <li class="info-item">Quy chế website</li>
+                                    <li class="info-item">Bảo mật thông tin</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="info-item__wrap">
+                                <div class="info__header">
+                                    <i class="info__header-icon fas fa-plus"></i>
+                                    Hotline
+                                </div>
+                                <ul class="info-list">
+                                    <li class="info-item">Đặt hàng 1800 6936 (07:00-21:00)</li>
+                                    <li class="info-item">Hỗ trợ 028.71.087.088 (07:00-21:00)</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col l-3 m-6 c-12">
+                            <div class="info-item__wrap">
+                                <div class="info__header">
+                                    <i class="info__header-icon fas fa-plus"></i>
+                                    Liên hệ
+                                </div>
+                                <ul class="info-list">
+                                    <li class="info-item">Head Office 1: 86 - 88 Cao Thang, Ward 4, District 3, Ho Chi Minh, Vietnam. Head Office 2: Floor 3 & 4 The Hub Building - 195/10E Dien Bien Phu, Ward 15, Binh Thanh District, Ho Chi Minh, Vietnam. +842871 078 079 hi@thecoffeehouse.vn</li>
+                                    <li class="info-item">Head Office 2: Floor 3 & 4 The Hub Building - 195/10E Dien Bien Phu, Ward 15, Binh Thanh District, Ho Chi Minh, Vietnam.</li>
+                                    <li class="info-item">+842871 078 079</li>
+                                    <li class="info-item">hi@thecoffeehouse.vn</li>
+    
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <div class="grid wide">
+            <div class="row copyright-wrap">
+                <div class="copyright-content col l-7 m-6 c-6">
+                    Copyright © 2021 The Coffee House. All rights reserved.
+                </div>
+                <div class="copyright-img col l-5 m-6 c-6">
+                    <img src="./assets/img/copyright.png" alt="" class="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+</footer>
+
+<navigation class="nav2 display-flex-on-mb-tablet">
+    <a href="#" class="nav2__item active">
+        <i class="nav2__icon fas fa-home"></i>
+        <div class="nav2__item-name">Trang chủ</div>
+    </a>
+    <a  href="#product" class="nav2__item">
+        <i class="nav2__icon fas fa-coffee"></i>
+        <div class="nav2__item-name">Đặt hàng</div>
+    </a>
+    <a href="#news"class="nav2__item">
+        <i class="nav2__icon fas fa-newspaper"></i>
+        <div class="nav2__item-name">Tin tức</div>
+    </a>
+    <a href="#store" class="nav2__item">
+        <i class="nav2__icon fas fa-store"></i>
+        <div class="nav2__item-name">Cửa hàng</div>
+    </a>
+</navigation>
+    
+<modal1>
+    <div class="overlay"></div>
+    <!-- delivery -->
+    <div class="delivery-wrap">
+        <div class="delivery-option">
+            <div class="delivery-item ">
+                <img src="./assets/img/header_delivery.png" alt="" class="modal1-delivery__img">
+                <span class="delivery__text">Giao hàng</span>
+            </div>
+            <div class="delivery-item active ">
+                <img src="./assets/img/header_pickup.png" alt="" class="modal1-delivery__img">
+                <span class="delivery__text">Mang đi</span>
+            </div>
+        </div>
+
+        <input type="text" placeholder="Vui lòng nhập địa chỉ" class="delivery__input ">
+        <input type="text" placeholder="Tìm cửa hàng theo quận huyện" class="delivery__input active">
+    </div>
+</modal1>
+
+<modal2>
+    <div class="overlay"></div>
+    <div class="order">
+        <div class="order__header">
+            <i class="order__icon ti-close"></i>
+            <div class="order__action-text">Thêm món mới</div>
+        </div>
+
+        <div class="order__body">
+            <div class="order-product">
+                <!-- render from database -->
+            </div>
+
+            <!-- note -->
+            <div class="order-product__note">
+                <div class="note-icon__wrap">
+                    <img class="note-icon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDIwSDFDMC43MzQ3ODQgMjAgMC40ODA0MyAxOS44OTQ2IDAuMjkyODkzIDE5LjcwNzFDMC4xMDUzNTcgMTkuNTE5NiAwIDE5LjI2NTIgMCAxOVYxQzAgMC43MzQ3ODQgMC4xMDUzNTcgMC40ODA0MyAwLjI5Mjg5MyAwLjI5Mjg5M0MwLjQ4MDQzIDAuMTA1MzU3IDAuNzM0Nzg0IDAgMSAwSDE3QzE3LjI2NTIgMCAxNy41MTk2IDAuMTA1MzU3IDE3LjcwNzEgMC4yOTI4OTNDMTcuODk0NiAwLjQ4MDQzIDE4IDAuNzM0Nzg0IDE4IDFWMTlDMTggMTkuMjY1MiAxNy44OTQ2IDE5LjUxOTYgMTcuNzA3MSAxOS43MDcxQzE3LjUxOTYgMTkuODk0NiAxNy4yNjUyIDIwIDE3IDIwWk01IDVWN0gxM1Y1SDVaTTUgOVYxMUgxM1Y5SDVaTTUgMTNWMTVIMTBWMTNINVoiIGZpbGw9IiNFNEU0RTQiLz4KPC9zdmc+Cg=="></img>
+                </div>
+                <input type="text" placeholder="Ghi chú thêm cho món này" class="note__input">
+            </div>
+        </div>
+
+        <!-- optional -->
+        <div class="order-options">
+            <div class="option-header">
+                CHỌN SIZE (BẮT BUỘC)
+            </div>
+            <div class="option-wrap">
+                <div class="option-size">
+                    <input class="size-control" type="radio" checked  name="size-product" value="0">
+                    <span class="size-value">Vừa</span>
+                    <span class="size-price" >+ 0đ</span>
+                </div>
+                <div class="option-size">
+                    <input class="size-control" type="radio"  name="size-product" value="5000">
+                    <span class="size-value">Lớn</span>
+                    <span class="size-price">+ 5.000đ</span>
+                </div>
+            </div>
+            
+        </div>
+        <div class="order-options">
+            <div class="option-header">
+                CHỌN TOPPING (TÙY CHỌN)
+            </div>
+            <div class="option-wrap">
+                <div class="option__detail">
+                    <div class="option__value">Trân châu trắng</div>
+                    <div class="option__price">+ 10.000đ</div>
+                </div>
+                <div class="order-quantity">
+                    <i class="ti-minus quantity__icon quantity__icon-minus"></i>
+                    <input type="number" value="0" min="0" class="quantity-value">
+                    <i class="ti-plus quantity__icon quantity__icon-plus "></i>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="order-cart">
+            <a href="" class="order-button">
+                <!-- 55.000đ - Thêm vào giỏ hàng -->
+
+            </a>
+        </div>
+    </div>
+</modal2>
+
+<modal3>
+    <div class="overlay"></div>
+    <div class="login">
+        <img src="./assets/img/login.png" alt="" class="login__img">
+        <div class="login__content">
+            <h4 class="login__head">Chào mừng bạn đến với</h4>
+            <img src="https://www.thecoffeehouse.com/_nuxt/img/logo-black.44900f6.svg" alt="" class="login__logo">
+            <div class="login__input-wrap">
+                <div class="login__country">
+                    <img class="country__img" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjUiIHZpZXdCb3g9IjAgMCAyNCAyNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDI0LjM2NTdDMTguNjI3NCAyNC4zNjU3IDI0IDE4Ljk5MzEgMjQgMTIuMzY1N0MyNCA1LjczODMxIDE4LjYyNzQgMC4zNjU3MjMgMTIgMC4zNjU3MjNDNS4zNzI1OCAwLjM2NTcyMyAwIDUuNzM4MzEgMCAxMi4zNjU3QzAgMTguOTkzMSA1LjM3MjU4IDI0LjM2NTcgMTIgMjQuMzY1N1oiIGZpbGw9IiNGNTIyMkQiLz4KPHBhdGggZD0iTTEyLjAwMTYgMTUuMTY1OEwxNS45NjE2IDE3Ljk2NThMMTQuNDgxNiAxMy40MDU4TDE4LjQwMTYgMTAuNDQ1OEgxMy41MjE2TDEyLjAwMTYgNS45NjU4MkwxMC41MjE2IDEwLjQ0NThINS42MDE1Nkw5LjUyMTU2IDEzLjQwNThMOC4wNDE1NiAxNy45NjU4TDEyLjAwMTYgMTUuMTY1OFoiIGZpbGw9IiNGRkU2MkUiLz4KPC9zdmc+Cg==" alt="">
+                    <span class="country__number">+84</span>
+                </div>
+                <input type="text" placeholder="Nhập số điện thoại" class="logo__input">
+            </div>
+            <a href="" class="login__submit">Đăng nhập</a>
+        </div>
+    </div>
+</modal3>
+<script type="text/javascript" src="./JS/main.js"></script>
+<script type="text/javascript" src="./JS/base.js"></script>
+
+</html>         

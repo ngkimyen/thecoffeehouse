@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box !important;
+    margin: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #fa8c16;
+    --light-primary-color: #F3B155;
+    --beige-color: #FDF0D4;
+    --white-color: #fff;
+    --black-color: #333;
+    --text-color: #383838;
+    --grey-color: #666666;
+    --shadow-color: #d3caca;
+    --radial-gradient-orange: radial-gradient(100% 501.4% at 0% 100%,#ffb141 0%,#fb8d17 100%);
+
+}
+
+.active {
+    display: block !important;
+}
+.active-inline-flex {
+    display: inline-flex !important;
+}
+
+
+.limit-line-2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/* ----------keyframes------------------- */
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-50%)
+    }
+    to {    
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+@keyframes fadeOut {
+    from {    
+        opacity: 1;
+        transform: translateY(0)
+    }
+    to { 
+        opacity: 0;
+        transform: translateY(-50%) 
+    }
+}
+
+
+@keyframes fadeInOrder {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOutOrder {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes floatIn {
+    from {
+        transform: translateX(-50%)
+    }
+    from {
+        transform: translateX(0)
+    }
+}
