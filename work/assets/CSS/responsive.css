@@ -211,7 +211,7 @@
     .order {
         bottom: 0;
         width: 95%;
-        height: 100vh;
+        max-height: 100vh;
         overflow-y: auto; ;
         margin: 10px auto;
     }
@@ -286,7 +286,6 @@
         font-size: 1.5rem;
     }
     .order {
-        width: 95%;
         margin-top: 10px;
     }
     .order-product__img {

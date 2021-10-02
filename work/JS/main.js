@@ -143,7 +143,6 @@ function addActive (element,parent,index) {
 const storeSlides = $$('.store-slide');
 const storeBtns = $$('.store-btn');
 let storeCounter=1;
-// console.log(storeSlides);
 
 setInterval(() => {
     changeSlide(storeSlides,storeBtns,storeCounter);
