@@ -29,10 +29,6 @@
 <div class="header">
     <div class="grid wide">
         <div class=" header__container">
-        <div class="logo hide-on-mb-tablet ">
-            <img src="https://www.thecoffeehouse.com/_nuxt/img/logo.174bdfd.svg" alt="" class="logo__img">
-        </div>
-
         <div class="delivery">
             <img src="./assets/img/header_delivery.png" alt=""  class="delivery__img">
             <img src="./assets/img/header_pickup.png" alt="" class="delivery__img active">
@@ -206,58 +202,64 @@
     </div>
 
     <div id="store" class="store">
-        <div class="store-slides">
-            <div class="slides-container">
-                <div class="store-slide active">
-                    <img src="./assets/img/store.png" alt="" class="store-slide__img">
-                </div>
-                <div class="store-slide">
-                    <img src="./assets/img/store2.jpeg" alt="" class="store-slide__img">
-                </div>
-                <div class="store-slide">
-                    <img src="./assets/img/store3.jpeg" alt="" class="store-slide__img">
-                </div>
+        <div class="grid wide">
+            <div class="row">
 
-            </div>
-            <div class="store-slide__content">
-                <div class="store-slide__heading">Cửa hàng mới nhất ✨</div>
-                <div class="store-slide__body">
-                    <div class="store-slide__name">The Coffee House (Grand World Phú Quốc)</div> 
-                    <a href="#" class="store-slide__link">Xem thêm thông tin</a>
+                <div class="store-slides">
+                    <div class="slides-container">
+                        <div class="store-slide active">
+                            <img src="./assets/img/store.png" alt="" class="store-slide__img">
+                        </div>
+                        <div class="store-slide">
+                            <img src="./assets/img/store2.jpeg" alt="" class="store-slide__img">
+                        </div>
+                        <div class="store-slide">
+                            <img src="./assets/img/store3.jpeg" alt="" class="store-slide__img">
+                        </div>
+        
+                    </div>
+                    <div class="store-slide__content">
+                        <div class="store-slide__heading">Cửa hàng mới nhất ✨</div>
+                        <div class="store-slide__body">
+                            <div class="store-slide__name">The Coffee House (Grand World Phú Quốc)</div> 
+                            <a href="#" class="store-slide__link">Xem thêm thông tin</a>
+                        </div>
+                        <div class="store-btns ">
+                            <div class="store-btn active"></div> 
+                            <div class="store-btn"></div> 
+                            <div class="store-btn"></div> 
+                        </div>
+                    </div>
+                   
                 </div>
-                <div class="store-btns ">
-                    <div class="store-btn active"></div> 
-                    <div class="store-btn"></div> 
-                    <div class="store-btn"></div> 
-                </div>
-            </div>
-           
-        </div>
-        <div class="store-find">
-           <div class="store-find-container">
-               <div class="store-find__text">
-                   <div class="store-find__heading">
-                        <i class="fas fa-home store-find__icon"></i>
-                        Tìm Một Cửa Hàng
+                <div class="store-find">
+                   <div class="store-find-container">
+                       <div class="store-find__text">
+                           <div class="store-find__heading">
+                                <i class="fas fa-home store-find__icon"></i>
+                                Tìm Một Cửa Hàng
+                           </div>
+                           <div class="store-find__readmore">
+                               Xem toàn bộ cửa hàng 
+                               <i class="fas fa-arrow-right store-find__icon "></i>
+                           </div>
+                       </div>
+                       <div class="store-find__select">
+                           <select>
+                                <option value="">Vui lòng chọn một thành phố, quận, huyện</option>
+                                <option value="district-1">Quận 1</option>
+                                <option value="district-2">Quận 2</option>
+                                <option value="district-3">Quận 3</option>
+                           </select>
+                        </div>
+                        <div class="store-find__img-wrap hide-on-mb-tablet">
+                            <img src="https://www.thecoffeehouse.com/_nuxt/img/home-box-bg.d2f5825.svg" alt="" class="store-find__img">
+                        </div>
                    </div>
-                   <div class="store-find__readmore">
-                       Xem toàn bộ cửa hàng 
-                       <i class="fas fa-arrow-right store-find__icon "></i>
-                   </div>
-               </div>
-               <div class="store-find__select">
-                   <select>
-                        <option value="">Vui lòng chọn một thành phố, quận, huyện</option>
-                        <option value="district-1">Quận 1</option>
-                        <option value="district-2">Quận 2</option>
-                        <option value="district-3">Quận 3</option>
-                   </select>
+                   
                 </div>
-                <div class="store-find__img-wrap hide-on-mb-tablet">
-                    <img src="https://www.thecoffeehouse.com/_nuxt/img/home-box-bg.d2f5825.svg" alt="" class="store-find__img">
-                </div>
-           </div>
-           
+            </div>
+
         </div>
         
     </div>
@@ -293,14 +295,10 @@
 
 </body>
 
-<footer>
+<footer id="footer">
     <div class="info">
         <div class="grid wide">
-            <div class="info-wrap row">
-                <div class="info__logo col l-2 m-3 c-4">
-                    <img src="https://www.thecoffeehouse.com/_nuxt/img/logo-footer.72c86fc.png" alt="">
-                </div>
-                <div class="info-category col l-10 m-9 c-8">
+                <div class="info-category">
                     <div class="row">
                         <div class="col l-3 m-6 c-12">
                             <div class="info-item__wrap">

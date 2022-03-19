@@ -1,4 +1,9 @@
 
+@media (min-width: 1441px) {
+    .store .grid{
+        max-width: 1200px;
+    }
+}
 /* tablet & mobile */
 @media (max-width: 1023px){
     .wide {
