@@ -796,7 +796,7 @@ input::placeholder {
 }
 .new__img {
     width: 100%;
-    height: 150px;
+    height: auto;
     cursor: pointer;
 }
 
