@@ -724,8 +724,8 @@ input::placeholder {
 
 .main-product__item-img__wrap {
     background-color:#F2F2F2 ;
-    height: 86px;
     width: 86px;
+    height: 86px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
